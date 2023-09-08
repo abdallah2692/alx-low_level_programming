@@ -3,7 +3,9 @@
 /**
  * main - Entry point
  *
- * Descreption: A cProg. prints puts
+ * Description: A cProg. prints puts
+ *
+ * Return: Always 0 (sucsses)
  *
  */
 
