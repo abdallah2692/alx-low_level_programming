@@ -24,7 +24,7 @@ int numLength(int num)
 
 /**
  * main - check the code
- * Description: prints the first 98 Fibonacci numbers starting with 1 and 2 followed by a new line
+ * Description: prints the first 98 Fibonacci numbers followed by a new line
  * Return: 0 always
  */
 
