@@ -3,7 +3,6 @@
 /**
  * print_line - Draw straight line 
  * @n: num of the lines
- * Return: 0
  */
 
 void print_line(int n)
