@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - print the num from 0 to 14
- * Rturn: n
+ * Rturn: 0
  */
 
 void more_numbers(void)
