@@ -7,6 +7,7 @@
 void reset_to_98(int *n)
 {
     int *pdig;
+
     pdig = &(*n);
     printf("%d", *pdig);
     *n = 98;
