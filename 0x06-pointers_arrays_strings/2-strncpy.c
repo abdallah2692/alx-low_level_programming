@@ -3,9 +3,10 @@
 /**
  * _strncpy - copy strings
  * @dest: destination input
- * @stc: source input
- * @n: bytes of destination inputs
- * Retuen: value of @dest
+ * @src: source input
+ * @n: bytes of destination input
+ *
+ * Return: value of @dest
 */
 
 char *_strncpy(char *dest, char *src, int n)
