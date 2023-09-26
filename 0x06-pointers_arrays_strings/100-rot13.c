@@ -8,8 +8,8 @@
  */
 char *rot13(char *s)
 {
-    int i;
-    int j;
+    int i, j;
+
     char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
     for (i = 0; s[i] != '\0'; i++)
@@ -20,7 +20,7 @@ char *rot13(char *s)
             {
                 s[i] = datarot[j];
                 break;
-            }
+                }
         }
     }
     return (s);
