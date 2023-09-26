@@ -2,9 +2,9 @@
 
 /**
  * main - print 98
- * @n: integer
- * @a: array
- * @p: pointer
+ *
+ *
+ *
  * Return: 0 always
 */
 int main(void)
