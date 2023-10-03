@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  *  factorial - find factorial
- * @a: int
+ * @n: int
  * Return: integer
  */
 int factorial(int n)
 {
-if (a < 0)
+if (n < 0)
 {
 return (-1);
 }
-else if (a == 0)
+else if (n == 0)
 {
 return (1);
 }
-return (a * factorial(a - 1));
+return (n * factorial(n - 1));
 }
