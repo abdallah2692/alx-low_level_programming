@@ -44,7 +44,7 @@ int main(void)
 
 	if (result != NULL)
 	{
-		printf("%ld\n", result - haystack);
+		printf("%lld\n", (long long int)(result - haystack));
 	} else
 	{
 		printf("not found\n");
