@@ -18,11 +18,13 @@ char *_strpbrk(char *s, char *accept)
 		while (accept[b] != '\0')
 		{
 			if (accept[b] == s[a])
+			{
 				p = &s[a];
 				return (p);
+			}
+			b++;
 		}
-		b++;
+		a++;
 	}
-	a++;
 	return (0);
 }
