@@ -2,7 +2,7 @@
 
 /**
  * _strlen - find length
- * @a:
+ * @a: pointer of char
  * Return: int
 */
 
@@ -19,9 +19,9 @@ int _strlen(char *a)
 
 /**
  * str_concat - concatenates two strings
- * @s1:
- * @s2:
- * Return:
+ * @s1: pointer 1
+ * @s2: pointer 2
+ * Return: return s
 */
 
 
