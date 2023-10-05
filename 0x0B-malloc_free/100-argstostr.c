@@ -27,22 +27,22 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-		for (; a < ac; a++, b++)
-			b += _strlen(av[a]);
+	for (; a < ac; a++, b++)
+		b += _strlen(av[a]);
 
-		s = malloc(sizeof(char) * b + 1);
-		if (s == 0)
-			return (NULL);
+	s = malloc(sizeof(char) * b + 1);
+	if (s == 0)
+		return (NULL);
 
 
-		for (a = 0; a < ac; a++)
-		{
-			for (c = 0; av[a][c] != '\0'; c++, d++)
-				s[d] = av[a][c];
+	for (a = 0; a < ac; a++)
+	{
+		for (c = 0; av[a][c] != '\0'; c++, d++)
+			s[d] = av[a][c];
 
-			s[d] = '\n';
-			d++;
-		}
-		s[d] = '\0';
-		retrun (s);
+		s[d] = '\n';
+		d++;
+	}
+	s[d] = '\0';
+	retrun (s);
 }
