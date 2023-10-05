@@ -44,5 +44,5 @@ char *argstostr(int ac, char **av)
 		d++;
 	}
 	s[d] = '\0';
-	retrun (s);
+	return (s);
 }
