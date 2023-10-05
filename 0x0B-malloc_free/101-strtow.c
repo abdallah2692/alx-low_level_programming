@@ -38,15 +38,20 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	e = wrdcnt(str);
-	if (n == 1)
+	if (e == 1)
 		return (NULL);
-	w = (char **)malloc(e * sizeof(char *))
+	w = (char **)malloc(e * sizeof(char *));
+	if (w == NULL)
+		return (NULL);
+
+	w[e - 1] = NULL;
 	a = 0;
+
 	while (str[a])
 	{
 		if (str[a] != ' ' && (a == 0 || str[a - 1] == ' '))
 		{
-			for (b = 1; str[a + b] != ' ' && str[a +b ]; b++)
+			for (b = 1; str[a + b] != ' ' && str[a + b]; b++)
 				;
 			b++;
 			w[f] = (char*)malloc(b * sizeof(char));
@@ -55,11 +60,12 @@ char **strtow(char *str)
 			{
 				for (c = 0; c < f; c++)
 					free(w[c]);
+
 				free(w[e - 1]);
 				free(w);
 				return (NULL);
 			}
-			for (d + 0; d < b; d++)
+			for (d = 0; d < b; d++)
 				w[f][d] = str[a + d];
 			w[f][d] = '\0';
 			f++;
