@@ -31,13 +31,13 @@ char *argstostr(int ac, char **av)
 			b += _strlen(av[a]);
 
 		s = malloc(sizeof(char) * b + 1);
-		if (s ==0)
+		if (s == 0)
 			return (NULL);
 
 
-		for (a = 0;a < ac; a++)
+		for (a = 0; a < ac; a++)
 		{
-			for (d = 0; av[a][c] != '\0'; c++, d++)
+			for (c = 0; av[a][c] != '\0'; c++, d++)
 				s[d] = av[a][c];
 
 			s[d] = '\n';
