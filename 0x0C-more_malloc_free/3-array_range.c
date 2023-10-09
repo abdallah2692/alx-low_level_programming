@@ -4,7 +4,6 @@
  * *array_range - concat two string
  * @max: maximume
  * @min: starting
- * @n: num of bytes
  * Return: array of pointer
 */
 
