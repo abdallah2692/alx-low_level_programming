@@ -3,7 +3,7 @@
 /**
  * *_memset - fills memory
  * @s: pointer
- * @b: const
+ * @a: const
  * @n:bytes
  * Return: pointer s
 */
@@ -19,7 +19,7 @@ void *_memset(char *s, char a, unsigned int n)
 
 /**
  * *_calloc - allocate memory
- * @nmemd: length of array
+ * @nmemb: length of array
  * @size: size of element
  * Return: a pointer
 */
