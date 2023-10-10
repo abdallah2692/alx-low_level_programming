@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c"
-    }
+    },
+    "files.insertFinalNewline": true,
+    "files.eol": "\n"
 }
