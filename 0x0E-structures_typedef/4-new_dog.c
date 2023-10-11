@@ -1,6 +1,4 @@
 #include "dog.h"
-
-
 /**
  * _strlen - length of a string
  * @s: string
@@ -10,18 +8,16 @@ int _strlen(const char *s)
 {
 	int l = 0;
 
-	while(*s++)
+	while (*s++)
 		l++;
 	return (l);
 }
-
 /**
  * _strcopy - copy a string
  * @sc: the string
  * @d: copy
  * Return: s
 */
-
 char *_strcopy(char *d, char *sc)
 {
 	int a;
@@ -31,12 +27,6 @@ char *_strcopy(char *d, char *sc)
 	d[a] = '\0';
 	return (d);
 }
-
-
-
-
-
-
 /**
  * new_dog - the new dog
  * @name: the name
@@ -44,26 +34,21 @@ char *_strcopy(char *d, char *sc)
  * @owner: the owner
  * Return: string or NULL
 */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
-
 	d = (dog_t *) malloc(sizeof(dog_t));
-
 	if (d == NULL)
 		return (NULL);
-
 	(*d).name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if ((*d).name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
-
 	(*d).owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if ((*d).owner == NULL)
 	{
