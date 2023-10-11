@@ -1,12 +1,12 @@
 #include "dog.h"
-
+#include <stdoi.h>
 /**
  * print_dog - print a string
  * @d: the string
  * Return: void
 */
 
-void print_dog(struct dog *d)
+void print_dog(struct dog *d);
 {
 	if (d)
 	{
