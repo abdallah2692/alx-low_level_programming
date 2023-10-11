@@ -10,20 +10,19 @@ int _strlen(const char *s)
 {
 	int l = 0;
 
-	while(*s++){
+	while(*s++)
 		l++;
-	}
-	return (NULL);
+	return (l);
 }
 
 /**
- * _strcpy - copy a string
+ * _strcopy - copy a string
  * @sc: the string
  * @d: copy
  * Return: s
 */
 
-char *_strcpy(char *d, char *sc)
+char *_strcopy(char *d, char *sc)
 {
 	int a;
 
@@ -68,8 +67,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*d).owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if ((*d).owner == NULL)
 	{
-		free((*d).name)
+		free((*d).name);
 		free(d);
 		return (NULL);
 	}
+	(*d).name = _strcopy((*d).name, name);
+	(*d).owner = _strcopy((*d).owner, owner);
+	(*d).age = age;
+	return (d);
 }
