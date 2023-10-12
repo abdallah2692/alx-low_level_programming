@@ -10,7 +10,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int a = n;
-	char *str;
+	char *s;
 	va_list ap;
 
 	if (!n)
@@ -20,6 +20,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	va_start(ap, n);
 	while (a--)
-		printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)", a ? (separator ? separator : "") : "\n");
+		printf("%s%s", (s = va_arg(ap, char *)) ? s : "(nil)", a ? (separator ? separator : "") : "\n");
 	va_end(ap);
 }
