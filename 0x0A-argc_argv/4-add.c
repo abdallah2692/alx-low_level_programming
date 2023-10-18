@@ -14,6 +14,7 @@ int main(int argc, char const **argv)
 	int num = 0;
 	int i;
 	size_t j;
+
 	if (argc == 1)
 	{
 		printf("0\n");
