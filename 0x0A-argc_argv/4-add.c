@@ -11,11 +11,10 @@
 
 int main(int argc, char const **argv)
 {
-	int mult1 = atoi(argv[1]);
-	int mult2 = atoi(argv[2]);
+	int num = 0;
 	int i;
 	size_t j;
-	if (argc != 3)
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
@@ -30,7 +29,8 @@ int main(int argc, char const **argv)
 				return (1);
 			}
 		}
+		num += atoi(argv[i]);
 	}
-	printf("%d\n", mult1 + mult2);
+	printf("%d\n", num);
 	return (0);
 }

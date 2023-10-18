@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - intery point
  * @argc: the num of the programe path
@@ -9,6 +10,7 @@
 int main(int argc, const char **argv)
 {
 	(void)argv;
-	printf("%d\n", argc);
+
+    printf("%d\n", argc - 1);
 	return (0);
 }
