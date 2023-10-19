@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * ;ist_len - length of the list
+ * list_len - length of the list
  * @h: pointer
  * Return: size
 */
@@ -14,5 +14,5 @@ size_t list_len(const list_t *h)
 		h = h->next;
 		a++;
 	}
-	return (1);
+	return (a);
 }
