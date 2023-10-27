@@ -1,7 +1,4 @@
 #include "main.h"
-#include <math.h>
-#include <string.h>
-
 
 /**
  * binary_to_unit - convert
