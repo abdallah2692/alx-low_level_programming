@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_modeint_end - and a node to the end
+ * add_nodeint_end - and a node to the end
  * @head: poin to the first
  * @n: val of new
  * Return: pointer
