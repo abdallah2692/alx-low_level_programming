@@ -1,5 +1,11 @@
 #include "main.h"
 
+
+/**
+ * print_binary - print binary
+ * @n: input num
+ * Return: nothing
+*/
 void print_binary(unsigned long int n)
 {
 	int a = sizeof(n) * 8 , i = 0;
