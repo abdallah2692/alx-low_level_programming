@@ -4,7 +4,10 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#ifndef BUFSIZ
 #define BUFSIZ 1024
+#endif
+
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
