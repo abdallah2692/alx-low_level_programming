@@ -10,6 +10,7 @@
 int _strlen(char *c)
 {
 	int a = 0;
+
 	if (!c)
 		return (0);
 	while (*c++)
