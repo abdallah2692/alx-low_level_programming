@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/stat.h>
+
 #ifndef BUFSIZ
 #define BUFSIZ 1024
 #endif
