@@ -1,0 +1,9 @@
+2024-04-24 07:29:41.254 [info] Experiment 'pythonaa' is active
+2024-04-24 07:29:41.254 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-04-24 07:29:41.254 [info] Experiment 'pythonREPLSmartSend' is active
+2024-04-24 07:29:41.254 [info] Experiment 'pythonSurveyNotification' is active
+2024-04-24 07:29:41.254 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-04-24 07:29:41.254 [info] Experiment 'pythonTestAdapter' is active
+2024-04-24 07:29:43.637 [info] Test server listening.
+2024-04-24 07:29:43.829 [info] Python interpreter path: /bin/python3
+2024-04-24 07:29:45.870 [info] Starting Pylance language server.
